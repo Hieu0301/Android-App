@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tài khoản:"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/edt_taiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Nhập tên tài khoản"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Mật khẩu:"
+            android:textSize="16dp"/>
+
+        <EditText
+            android:id="@+id/edt_matKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:hint="Nhập mật khẩu"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_dangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtView_dangKy"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginTop="10dp"
+        android:text="Chưa có tài khoản? Tạo tài khoản mới."
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="16dp" />
+
+</LinearLayout>
